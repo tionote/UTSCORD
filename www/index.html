@@ -41,8 +41,8 @@
 
 <body>
     <div class="bar bar-header bar-positive" style="margin-bottom:80px;">
-        <h1 class="title">Insert Database</h1>
-        <a class="button button-clear" href="readjson.html">Read JSON</a>
+        <h1 class="title">Form Pendaftaran Sertifikasi</h1>
+        <a class="button button-clear" href="readjson.html">Data Sertifikasi</a>
     </div>
     <br/>
     <br/>
@@ -58,17 +58,32 @@
         </div>
 
         <div class="item">
-            <label>Telp</label>
-            <input type="text" id="telp" value="" />
-        </div>
+        <label>Pilih Program Studi:
+        <select id="telp">
+          <option value="Teknik Informatika">Teknik Informatika</option>
+          <option value="Sistem Informasi">Sistem Informasi</option>
+          <option value="Manajemen Informatika">Manajemen Informatika</option>
+        </select>
+      </label>
+      </div>
+      
         <div class="item">
             <label>Email</label>
             <input type="text" id="email" value="" />
         </div>
+    
+        
         <div class="item">
-            <label>Alamat</label>
-            <input type="text" id="alamat" value="" />
-        </div>
+        <label>Pilih Sertifikasi:
+        <select id="alamat">
+          <option value="CISCO">Cisco</option>
+          <option value="FORESEC">Foresec</option>
+          <option value="ORACLE">Oracle</option>
+          <option value="MTA">MTA</option>
+          <option value="TOEFL">Toefl</option>
+        </select>
+      </label>
+      </div>
         
         <div class="item">
             <input type="button" id="insert" class="button button-block" value="Insert" />
